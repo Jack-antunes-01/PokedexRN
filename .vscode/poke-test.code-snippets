@@ -1,0 +1,13 @@
+{
+  "poke-styled": {
+    "prefix": "poke-test",
+    "body": [
+      "describe('$1', () => {",
+      "\ttest('$2', () => {",
+      "\t\t$3",
+      "\t})",
+      "});"
+    ],
+    "description": "Cria um teste unitário"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "poke-styled-container": {
+    "prefix": "poke-styled-container",
+    "body": [
+      "export const Container = styled.View`",
+      "  ${({}) => css`",
+      "       $1",
+      "  `}",
+      "`;"
+    ],
+    "description": "Cria um container view styled-components"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "poke-hook": {
+    "prefix": "poke-hook",
+    "body": [
+      "import { useDispatch } from 'react-redux';",
+      "",
+      "interface ${TM_DIRECTORY/^.+[\\/\\\\]+(.*)$/$1/}Props { }",
+      "",
+      "const use${TM_DIRECTORY/^.+[\\/\\\\]+(.*)$/$1/} = ({ }: ${TM_DIRECTORY/^.+[\\/\\\\]+(.*)$/$1/}Props) => {",
+      "  const dispatch = useDispatch();",
+      "",
+      "  const handleGoBack = () => {};",
+      "",
+      "  return { handleGoBack };",
+      "};",
+      "",
+      "export { use${TM_DIRECTORY/^.+[\\/\\\\]+(.*)$/$1/} };",
+      ""
+    ],
+    "description": "Cria um hook"
+  }
+}

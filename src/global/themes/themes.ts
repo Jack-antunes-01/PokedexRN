@@ -1,0 +1,73 @@
+export default {
+  colors: {
+    primary: '#DC0A2D',
+    byPokemonType: {
+      bug: '#A7B723',
+      dark: '#75574C',
+      dragon: '#7037FF',
+      eletric: '#f9CF30',
+      fairy: '#E69EAC',
+      fighting: '#C12239',
+      fire: '#F57D31',
+      flying: '#A891EC',
+      ghost: '#70559B',
+      normal: '#AAA67F',
+      grass: '#74CB48',
+      ground: '#DEC16B',
+      ice: '#9AD6DF',
+      poison: '#A43E9E',
+      psychic: '#FB5584',
+      rock: '#B69E31',
+      steel: '#B7B9D0',
+      water: '#6493EB',
+    },
+    grayscale: {
+      dark: '#212121',
+      medium: '#666666',
+      light: '#E0E0E0',
+      background: '#EFEFEF',
+      white: '#FFFFFF',
+    },
+  },
+  font: {
+    fontSize: {
+      xxxs: 8,
+      xxs: 10,
+      xs: 12,
+      sm: 14,
+      md: 24,
+    },
+    lineHeight: {
+      xxxs: 16,
+      xxs: 16,
+      xs: 16,
+      sm: 16,
+      md: 32,
+    },
+  },
+  border: {
+    radius: {
+      xxs: 4,
+      xs: 8,
+      sm: 10,
+      md: 16,
+      pill: 500,
+    },
+  },
+  spacing: {
+    xxxs: 4,
+    xxs: 8,
+    xs: 12,
+    sm: 16,
+    md: 20,
+    lg: 24,
+    xg: 28,
+    xlg: 32,
+  },
+  icon: {
+    size: {
+      sm: 24,
+    },
+  },
+  activeOpacity: 0.7,
+};

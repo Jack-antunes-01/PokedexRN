@@ -1,0 +1,49 @@
+{
+  "pokemons": [
+    {
+      "id": "304",
+      "image": "aron",
+      "name": "Aron"
+    },
+    {
+      "id": "001",
+      "image": "bulbasaur",
+      "name": "Bulbasaur"
+    },
+    {
+      "id": "012",
+      "image": "butterfree",
+      "name": "Butterfree"
+    },
+    {
+      "id": "004",
+      "image": "charmander",
+      "name": "Charmander"
+    },
+    {
+      "id": "132",
+      "image": "ditto",
+      "name": "Ditto"
+    },
+    {
+      "id": "092",
+      "image": "gastly",
+      "name": "Gastly"
+    },
+    {
+      "id": "152",
+      "image": "mew",
+      "name": "Mew"
+    },
+    {
+      "id": "025",
+      "image": "pikachu",
+      "name": "Pikachu"
+    },
+    {
+      "id": "007",
+      "image": "squirtle",
+      "name": "Squirtle"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+    "poke-component": {
+        "prefix": "poke-component",
+        "body": [
+            "import React from 'react';",
+            "",
+            "import * as S from './styles';",
+            "",
+            "interface ${TM_DIRECTORY/^.+[\\/\\\\]+(.*)$/$1/}Props { }",
+            "",
+            "const ${TM_DIRECTORY/^.+[\\/\\\\]+(.*)$/$1/} = ({ }: ${TM_DIRECTORY/^.+[\\/\\\\]+(.*)$/$1/}Props) => {",
+            "",
+            "  return (",
+            "\t<S.Container>",
+            "\t</S.Container>",
+            "  );",
+            "};",
+            "",
+            "export { ${TM_DIRECTORY/^.+[\\/\\\\]+(.*)$/$1/} };",
+            ""
+        ],
+        "description": "Cria um componente typescript"
+    }
+}
