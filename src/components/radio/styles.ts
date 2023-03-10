@@ -1,6 +1,7 @@
 import { DefaultTheme } from 'styled-components';
 import styled, { css } from 'styled-components/native';
-import { Touchable } from '../touchableOpacity';
+
+import { Touchable } from '@components/touchableOpacity';
 
 export const Container = styled.View`
   ${({}) => css`

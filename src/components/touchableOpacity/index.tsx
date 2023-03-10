@@ -11,7 +11,15 @@ interface TouchableProps extends TouchableOpacityProps {
 
 const Touchable = ({ children, style, ...args }: TouchableProps) => {
   return (
-    <S.Container style={style} {...args}>
+    <S.Container
+      style={style}
+      hitSlop={{
+        bottom: 8,
+        top: 8,
+        right: 8,
+        left: 8,
+      }}
+      {...args}>
       {children}
     </S.Container>
   );

@@ -1,18 +1,29 @@
 import React from 'react';
+import { ListRenderItem } from 'react-native';
 
-import { Filter } from '../../components/filter';
-import { Illustrations } from '../../assets/ilustrations';
-import { Card, CardProps } from '../../components/card';
-import { pokemons } from '../../data/data.json';
+import { Card } from '@components/card';
+import { Filter } from '@components/filter';
+import { Illustrations } from '@assets/ilustrations';
+
+import { PokemonTypes } from 'src/types/pokemonTypes';
 
 import * as S from './styles';
+import { useHome } from './useHome';
 
 export const Home = () => {
-  const renderItem = ({ item }: { item: CardProps }) => (
+  const {
+    searchText,
+    filteredPokemons,
+    handleChangeText,
+    handleNavigateToDetails,
+  } = useHome();
+
+  const renderItem = ({ item }: { item: PokemonTypes }) => (
     <Card
       id={item.id}
       image={Illustrations[item.image as keyof typeof Illustrations]}
       name={item.name}
+      onPress={() => handleNavigateToDetails(item)}
     />
   );
 
@@ -20,14 +31,14 @@ export const Home = () => {
     <S.Container>
       <S.StyledHeader />
       <S.SearchContainer>
-        <S.StyledSearch />
+        <S.StyledSearch onChangeText={handleChangeText} text={searchText} />
         <Filter />
       </S.SearchContainer>
       <S.ContainerFlatList>
         <S.List
-          keyExtractor={(_: any, index: number) => index.toString()}
-          data={pokemons}
-          renderItem={renderItem}
+          keyExtractor={(item: unknown) => (item as PokemonTypes).id.toString()}
+          data={filteredPokemons}
+          renderItem={renderItem as ListRenderItem<unknown>}
           showsVerticalScrollIndicator={false}
           numColumns={3}
         />

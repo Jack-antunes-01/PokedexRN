@@ -1,6 +1,18 @@
 {
   "extends": "@tsconfig/react-native/tsconfig.json",
   "compilerOptions": {
-    "types": ["react-native", "jest", "styled-components-react-native"]
-  }
+    "types": ["react-native", "jest", "styled-components-react-native"],
+    "baseUrl": ".",
+    "paths": {
+      "@enum/*": ["src/enum/*"],
+      "@data/*": ["src/data/*"],
+      "@components/*": ["src/components/*"],
+      "@navigator/*": ["src/navigator/*"],
+      "@themes/*": ["src/global/themes/*"],
+      "@routes/*": ["src/routes/*"],
+      "@assets/*": ["src/assets/*"]
+    }
+  },
+  "include": ["**/*.ts", "**/*.tsx"],
+  "exclude": ["node_modules"]
 }

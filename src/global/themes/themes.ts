@@ -35,6 +35,7 @@ export default {
       xxs: 10,
       xs: 12,
       sm: 14,
+      xmd: 18,
       md: 24,
     },
     lineHeight: {
@@ -67,6 +68,7 @@ export default {
   icon: {
     size: {
       sm: 24,
+      md: 32,
     },
   },
   activeOpacity: 0.7,

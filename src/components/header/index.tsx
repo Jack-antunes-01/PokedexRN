@@ -1,6 +1,6 @@
 import React from 'react';
 import { StyleProp, ViewStyle } from 'react-native';
-import { Icons } from '../../assets/icons';
+import { Icons } from '@assets/icons';
 
 import * as S from './styles';
 

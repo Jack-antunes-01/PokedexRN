@@ -1,7 +1,8 @@
 import styled, { css } from 'styled-components/native';
 import { SvgXml } from 'react-native-svg';
-import themes from '../../global/themes/themes';
-import { Touchable } from '../touchableOpacity';
+
+import { Touchable } from '@components/touchableOpacity';
+import themes from '@themes/themes';
 
 export const Container = styled.View`
   ${({ theme }) => css`

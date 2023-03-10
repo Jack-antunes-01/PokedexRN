@@ -1,8 +1,8 @@
-import styled, { css } from 'styled-components/native';
+import { Header } from '@components/header';
+import { Search } from '@components/search';
+import themes from '@themes/themes';
 
-import { Header } from '../../components/header';
-import { Search } from '../../components/search';
-import themes from '../../global/themes/themes';
+import styled, { css } from 'styled-components/native';
 
 export const Container = styled.View`
   ${({ theme }) => css`
@@ -35,7 +35,7 @@ export const ContainerFlatList = styled.View`
   ${({ theme }) => css`
     border-width: 4px;
     border-color: ${theme.colors.grayscale.white};
-    border-radius: ${theme.border.radius.xs};
+    border-radius: ${theme.border.radius.xs}px;
     margin-right: ${theme.spacing.xxxs}px;
     margin-left: ${theme.spacing.xxxs}px;
     background-color: ${theme.colors.grayscale.white};

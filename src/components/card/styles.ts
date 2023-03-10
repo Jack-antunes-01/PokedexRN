@@ -1,7 +1,8 @@
 import { Dimensions } from 'react-native';
 import { SvgXml } from 'react-native-svg';
 import styled, { css } from 'styled-components/native';
-import { Touchable } from '../touchableOpacity';
+
+import { Touchable } from '@components/touchableOpacity';
 
 const { width } = Dimensions.get('screen');
 
@@ -16,7 +17,6 @@ export const Container = styled(Touchable)`
     height: ${CONSTANTS.cardSize}px;
     border-radius: 8px;
     margin-bottom: 16px;
-
     elevation: 4;
   `}
 `;

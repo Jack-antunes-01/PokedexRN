@@ -1,9 +1,10 @@
 import { SvgXml } from 'react-native-svg';
 import styled, { css } from 'styled-components/native';
-import themes from '../../global/themes/themes';
+
+import themes from '@themes/themes';
 
 export const Container = styled.View`
-  ${({}) => css``}
+  ${() => css``}
 `;
 
 export const Header = styled.View`

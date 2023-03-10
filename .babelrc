@@ -1,0 +1,19 @@
+{
+  "plugins": [
+    [
+      "module-resolver",
+      {
+        "root": ["./"],
+        "alias": {
+          "@enum": "./src/enum",
+          "@data": "./src/data",
+          "@components": "./src/components",
+          "@navigator": "./src/navigator",
+          "@themes": "./src/global/themes",
+          "@routes": "./src/routes",
+          "@assets": "./src/assets"
+        }
+      }
+    ]
+  ]
+}
