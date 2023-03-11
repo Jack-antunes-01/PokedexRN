@@ -17,7 +17,7 @@ const PokemonImageAnimated = Animatable.createAnimatableComponent<
 >(PokemonImage);
 
 export const Details = () => {
-  const { pokemonInfo, randomAnimation } = useDetails();
+  const { pokemonInfo, randomAnimation, isCoolAnimation } = useDetails();
 
   return (
     <S.Container pokemonType={pokemonInfo.type[0]}>
@@ -29,6 +29,8 @@ export const Details = () => {
         pokemonName={pokemonInfo.name}
         animation={randomAnimation}
         duration={1500}
+        iterationDelay={isCoolAnimation ? 200 : 0}
+        iterationCount={isCoolAnimation ? 3 : 1}
         useNativeDriver={true}
       />
       <S.ContainerPokemon />
@@ -36,7 +38,7 @@ export const Details = () => {
       <S.ContainerContent>
         <S.ContainerTag>
           {pokemonInfo.type.map((el, index) => (
-            <Tag title={el} isFirstItem={!index} />
+            <Tag key={index.toString()} title={el} isFirstItem={!index} />
           ))}
         </S.ContainerTag>
 

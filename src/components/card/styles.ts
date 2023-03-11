@@ -29,6 +29,7 @@ export const Header = styled.View`
 
 export const PokemonNumber = styled.Text`
   ${({ theme }) => css`
+    color: ${theme.colors.grayscale.dark};
     text-align: right;
     font-size: ${theme.font.fontSize.xs}px;
   `}
@@ -61,6 +62,7 @@ export const SVG = styled(SvgXml)`
 
 export const Title = styled.Text`
   ${({ theme }) => css`
+    color: ${theme.colors.grayscale.dark};
     font-size: ${theme.font.fontSize.xs}px;
   `}
 `;

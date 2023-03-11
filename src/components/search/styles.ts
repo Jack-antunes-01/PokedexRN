@@ -38,11 +38,14 @@ export const SVGClose = styled(SvgXml).attrs({
   `}
 `;
 
-export const SearchInput = styled.TextInput.attrs({})`
+export const SearchInput = styled.TextInput.attrs({
+  placeholderTextColor: themes.colors.grayscale.light,
+})`
   ${({ theme }) => css`
     flex: 1;
     border-radius: ${theme.border.radius.pill}px;
     margin-left: ${theme.spacing.xxs}px;
     margin-right: ${theme.spacing.xxs}px;
+    color: ${theme.colors.grayscale.dark};
   `}
 `;

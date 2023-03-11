@@ -2,6 +2,17 @@ import { Route } from '@enum/route';
 import { RouteProp, useRoute } from '@react-navigation/native';
 import { RootStackParamList } from '@navigator/types';
 
+export const coolAnimations = [
+  'bounce',
+  'flash',
+  'pulse',
+  'rubberBand',
+  'shake',
+  'swing',
+  'tada',
+  'wobble',
+];
+
 export const animations = [
   'bounce',
   'flash',
@@ -49,5 +60,7 @@ export const useDetails = () => {
 
   const randomAnimation = animations[random(0, animations.length - 1)];
 
-  return { pokemonInfo, randomAnimation };
+  const isCoolAnimation = coolAnimations.includes(randomAnimation);
+
+  return { pokemonInfo, randomAnimation, isCoolAnimation };
 };
